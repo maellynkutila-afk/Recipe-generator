@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Recipe Generator</title>
   </head>
   <body>
@@ -13,16 +19,28 @@
 
     <main>
       <form>
-        <label for="servings">Number of servings</label>
-        <input type="number" id="servings" min="1" max="10" /> <br />
-        <input
-          type="text"
-          placeholder="Enter the ingredients you would like to use"
-          required
-        />
-        <input type="submit" value="Submit" />
+        <div class="servings">
+          <label for="servings">Number of servings:</label>
+          <input
+            type="number"
+            id="servings"
+            min="1"
+            max="10"
+            class="number-content"
+          />
+          <br />
+        </div>
+        <div class="user-ingredients">
+          <input
+            type="text"
+            placeholder="Enter the ingredients you would like to use"
+            required
+            class="ingredients"
+          />
+          <input type="submit" value="Submit" class="submit-button" />
+        </div>
       </form>
-      <div>The recipe will go here</div>
+      <div class="text-container">The recipe will go here</div>
     </main>
     <footer>
       This AI project was coded by
