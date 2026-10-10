@@ -23,6 +23,10 @@ footer {
   bottom: 25px;
   right: 185px;
 }
+a {
+  color: rgb(227, 130, 19);
+  font-weight: bold;
+}
 .number-content {
   padding: 1px 5px;
   font-family: cursive;
@@ -48,12 +52,18 @@ footer {
 }
 .text-container {
   text-align: center;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid rgb(82, 54, 8);
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 900px;
 }
 .servings {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .user-ingredients {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
