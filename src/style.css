@@ -23,7 +23,7 @@ footer {
   margin-top: 30px;
 }
 a {
-  color: rgb(227, 130, 19);
+  color: black;
   font-weight: bold;
 }
 .number-content {
@@ -48,6 +48,13 @@ a {
   background-color: rgb(227, 130, 19);
   border: 1px solid rgb(227, 130, 19);
   border-radius: 3px;
+}
+.submit-button:hover {
+  transition: all 150ms ease-in-out;
+  border: 1px solid rgb(227, 130, 19);
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
 }
 .text-container {
   text-align: center;
