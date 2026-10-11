@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.20.0/dist/axios.min.js"></script>
     <title>AI Recipe Generator</title>
   </head>
   <body>
@@ -18,29 +19,31 @@
     </header>
 
     <main>
-      <form>
+      <form id="recipe-generator-form">
         <div class="servings">
-          <label for="servings">Number of servings:</label>
+          <label for="servings">Number of servings (max 10):</label>
           <input
             type="number"
             id="servings"
             min="1"
             max="10"
             class="number-content"
+            required
           />
           <br />
         </div>
         <div class="user-ingredients">
           <input
             type="text"
-            placeholder="Enter the ingredients you would like to use"
+            placeholder="Enter your ingredients (max 3)"
             required
             class="ingredients"
+            id="user-input"
           />
           <input type="submit" value="Submit" class="submit-button" />
         </div>
       </form>
-      <div class="text-container">The recipe will go here</div>
+      <div class="text-container" id="recipe"></div>
     </main>
     <footer>
       This AI project was coded by

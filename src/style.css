@@ -19,9 +19,8 @@ h1 {
 footer {
   font-family: monospace;
   font-size: 18px;
-  position: fixed;
-  bottom: 25px;
-  right: 185px;
+  text-align: center;
+  margin-top: 30px;
 }
 a {
   color: rgb(227, 130, 19);
